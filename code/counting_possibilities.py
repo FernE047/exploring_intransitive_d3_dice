@@ -58,8 +58,9 @@ class State:
     def __str__(self) -> str:
         return self.string_coming
 
+
 initial_state = State()
 possibilities = initial_state.calculate_possibilities()
-len(possibilities)
+print(len(possibilities))
 for possibility in possibilities:
     print(possibility)
