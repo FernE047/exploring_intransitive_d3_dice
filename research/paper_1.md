@@ -15,13 +15,7 @@ remaining ties by x₂ ≤ y₂ ≤ z₂
 
 problem I: how many ways can we arrange X, Y, Z values so the relationship less than between them is unique, not repeated? (e.g a ≤ b ≤ c ≤ d ≤ e ≤ f ≤ g ≤ h ≤ i)
 
-we calculate this on:
-
-- `code/counting_possibilities`: 280
-
-ouput saved on:
-
-- `data/dice_set_cases.txt`
+we calculate this on: `code/counting_possibilities`: 280 ouput saved at `data/dice_set_cases.txt`
 
 let's use the values 1, 2, 3, 4, 5, 6, 7, 8 and 9 as test values because they hold that 1 < 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9
 
