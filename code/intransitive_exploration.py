@@ -1,4 +1,7 @@
-dices_data: list[tuple[CoordinatesData, CoordinatesData, CoordinatesData]] = [
+DiceValuesData = tuple[float, float, float]
+DiceSetData = tuple[tuple[DiceValuesData, DiceValuesData, DiceValuesData]]
+
+dices_data: list[tuple[DiceValuesData, DiceValuesData, DiceValuesData]] = [
     ((1, 2, 3), (4, 5, 6), (7, 8, 9)),
     ((1, 2, 3), (4, 5, 7), (6, 8, 9)),
     ((1, 2, 3), (4, 5, 8), (6, 7, 9)),
@@ -281,6 +284,91 @@ dices_data: list[tuple[CoordinatesData, CoordinatesData, CoordinatesData]] = [
     ((1, 8, 9), (2, 6, 7), (3, 4, 5)),
 ]
 
+OutcomesData = list[tuple[list[float], float]]
+
+
+class Die:
+    """Base class for all dice types."""
+
+    def __init__(self, sides: tuple[float, float, float]) -> None:
+        self.sides = tuple(sorted(sides))
+
+    def get_outcomes(self) -> OutcomesData:
+        outcomes: OutcomesData = []
+        for side in self.sides:
+            outcomes.append(([side], side))
+        return outcomes
+
+    def beats(self, other: "Die") -> bool:
+        outcomes_self = self.get_outcomes()
+        outcomes_other = other.get_outcomes()
+        wins_self = 0
+        wins_other = 0
+        for _, result_self in outcomes_self:
+            for _, result_other in outcomes_other:
+                if result_self > result_other:
+                    wins_self += 1
+                elif result_self < result_other:
+                    wins_other += 1
+        return wins_self > wins_other
+
+    def __repr__(self) -> str:
+        return f"Die({self.sides})"
+
+    def __str__(self) -> str:
+        return repr(self)
+
+    def __eq__(self, value: object) -> bool:
+        if not isinstance(value, Die):
+            return NotImplemented
+        return self.sides == value.sides
+
+    def __lt__(self, value: object) -> bool:
+        if not isinstance(value, Die):
+            return NotImplemented
+        return value.beats(self)
+
+    def __gt__(self, value: object) -> bool:
+        if not isinstance(value, Die):
+            return NotImplemented
+        return self.beats(value)
+
+    def __ne__(self, value: object) -> bool:
+        if not isinstance(value, Die):
+            return NotImplemented
+        return self.sides != value.sides
+
+
+class DiceSet:
+    """A set of three dice to check for intransitivity."""
+
+    def __init__(self, die_a: Die, die_b: Die, die_c: Die) -> None:
+        self.die_a = die_a
+        self.die_b = die_b
+        self.die_c = die_c
+
+    def is_intransitive(self) -> bool:
+        if (
+            self.die_a > self.die_b
+            and self.die_b > self.die_c
+            and self.die_c > self.die_a
+        ):
+            return True
+        if (
+            self.die_a < self.die_b
+            and self.die_b < self.die_c
+            and self.die_c < self.die_a
+        ):
+            return True
+        return False
+
+    def __repr__(self) -> str:
+        return f"DiceSet({self.die_a}, {self.die_b}, {self.die_c})"
+
+    def __str__(self) -> str:
+        return repr(self)
+
+
 intransitive_dices: list[DiceSet] = []
 for data1, data2, data3 in dices_data:
     die_a = Die(data1)
@@ -293,4 +381,3 @@ for data1, data2, data3 in dices_data:
 print(f"Found {len(intransitive_dices)} intransitive dice sets:")
 for dice_set in intransitive_dices:
     print(dice_set)
-
