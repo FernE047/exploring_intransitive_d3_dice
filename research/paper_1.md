@@ -13,9 +13,22 @@ ties are broken by x₁ ≤ y₁ ≤ z₁
 remaining ties by x₂ ≤ y₂ ≤ z₂
 ⇒ x₀ is the smallest first-face among all dice in the set.
 
-problem I: how many ways can we arrange X, Y, Z values so the relationship less than between them is unique, not repeated? (e.g a ≤ b ≤ c ≤ d ≤ e ≤ f ≤ g ≤ h ≤ i)
+problem I: how many ways can we arrange X, Y, Z values so the relationship "less than or equal" between them is unique, not repeated? (e.g a ≤ b ≤ c ≤ d ≤ e ≤ f ≤ g ≤ h ≤ i)
 
 we calculate this on: `code/counting_possibilities`: 280 ouput saved at `data/dice_set_cases.txt`
+
+however, the equality between values matter in this case, so we have to consider the cases where values are equal. because changing x₀ < y₀ to x₀ = y₀ changes the winning relationship between them from a win for dice X to a tie.
+we have 280 cases, each one with 8 comparisions ≤, each comparision can be either < or =, so we have 2^8 = 256 combinations of < and = for each case.
+totaling 280 * 256 = 71680 combinations of value arrangements. some of these combinations equivalent to each other, for example: 
+
+case 17 and case 18:
+x₀ ≤ x₁ ≤ y₀ ≤ x₂ ≤ z₀ ≤ y₁ ≤ z₁ ≤ y₂ ≤ z₂
+x₀ ≤ x₁ ≤ y₀ ≤ x₂ ≤ z₀ ≤ y₁ ≤ z₁ ≤ z₂ ≤ y₂
+are equivalent when we set y₂ = z₂, because both become:
+x₀ ≤ x₁ ≤ y₀ ≤ x₂ ≤ z₀ ≤ y₁ ≤ z₁ ≤ y₂ = z₂
+so we have to filter these equivalences out. I propose we do this by generating all combinations, and storing them in a set data structure to ensure uniqueness. when equality is set, we sort equal values to ensure uniqueness.
+
+## ignore below work, it'll be changed later
 
 let's use the values 1, 2, 3, 4, 5, 6, 7, 8 and 9 as test values because they hold that 1 < 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9
 
