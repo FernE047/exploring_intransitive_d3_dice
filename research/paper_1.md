@@ -69,3 +69,51 @@ Since Y defeats both other dice, this DiceSet is transitive with Y as a dominant
 To find intransitive dicesets, we check if there is a cycle in the winning relationships: X > Y, Y > Z, Z > X.
 Note that intransitive dicesets cannot have any ties, because ties would prevent the formation of a strict cycle of wins.
 This is implemented on `code/test_intransitive_cases.py`, output saved at `data/intransitive_cases.txt` with 71 intransitive dicesets found.
+
+This solves Problem II: 71 intransitive dicesets found.
+
+Exploration of some intransitive dicesets found:
+
+An example of an intransitive diceset found is line 11439 from `data/dice_set_all_cases.txt` or line 71 from `data/intransitive_cases.txt`:
+x₀<y₀=z₀=z₁<y₁=y₂<x₁=x₂<z₂
+(x₀,x₁,x₂),(y₀,y₁,y₂),(z₀,z₁,z₂)
+
+   y₀ y₁ y₂    z₀ z₁ z₂    x₀ x₁ x₂
+x₀ -1 -1 -1 y₀  0  0 -1 z₀  1 -1 -1
+x₁  1  1  1 y₁  1  1 -1 z₁  1 -1 -1
+x₂  1  1  1 y₂  1  1 -1 z₂  1  1  1
+
+Here, we see that X defeats Y, Y defeats Z, and Z defeats X, forming a cycle and confirming the intransitive nature of this DiceSet.
+an numerical example of such diceset is:
+X = (1,4,4)
+Y = (2,3,3)
+Z = (2,2,5)
+dD = ((1,4,4), (2,3,3), (2,2,5))
+
+(1,4,4) > (2,3,3)
+(2,3,3) > (2,2,5)
+(2,2,5) > (1,4,4)
+
+an interesting example where both the max and min values are in the same die:
+
+x₀<y₀<z₀=z₁<x₁<y₁=y₂<z₂<x₂
+(x₀,x₁,x₂),(y₀,y₁,y₂),(z₀,z₁,z₂)
+
+   y₀ y₁ y₂    z₀ z₁ z₂    x₀ x₁ x₂
+x₀ -1 -1 -1 y₀ -1 -1 -1 z₀  1 -1 -1
+x₁  1 -1 -1 y₁  1  1 -1 z₁  1 -1 -1
+x₂  1  1  1 y₂  1  1 -1 z₂  1  1 -1
+We observe that X < Y, Y < Z, and Z < X. this diceset is intransitive.
+numerical example: 
+X = (1,4,7)
+Y = (2,5,5)
+Z = (3,3,6)
+dD = ((1,4,7), (2,5,5), (3,3,6))
+
+(1,4,7) < (2,5,5)
+(2,5,5) < (3,3,6)
+(3,3,6) < (1,4,7)
+
+Problem III: what are the minimal numerical dicesets that produce these intransitive dicesets? given a diceset (X, Y, Z), we want to find the minimal numerical values for X, Y, Z that satisfy the comparision arrangement. and all values must be positive integers.
+
+this is implemented on `code/finding_minimal_numerical_dicesets.py`, output saved at `data/minimal_numerical_dicesets.txt` with 71 minimal numerical dicesets found.
