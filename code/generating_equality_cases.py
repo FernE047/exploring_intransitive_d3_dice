@@ -43,6 +43,7 @@ class State:
 
 unique_lines: set[str] = set()
 for line in lines:
+    line = line.strip()
     terms = line.split(" ≤ ")
     #there's 9 terms, 8 comparisons, we want to generate all the cases distinguishing between < and =
     state = State(terms, ['≤'] * 8)
@@ -51,6 +52,8 @@ for line in lines:
         new_line = str(final_state)
         unique_lines.add(new_line)
 print(len(unique_lines))
+#sort lines by amount of equalities first, then lexicographically
+lines_sorted = sorted(sorted(unique_lines), key=lambda x: (x.count("="), x))
 with open("./data/dice_set_all_cases.txt", "w", encoding="utf-8") as file:
-    for line in sorted(unique_lines):
+    for line in lines_sorted:
         file.write(line + "\n")

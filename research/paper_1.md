@@ -17,7 +17,7 @@ problem I: how many ways can we arrange X, Y, Z values so the relationship "less
 
 we calculate this on: `code/counting_possibilities`: 280 ouput saved at `data/dice_set_cases.txt`
 
-however, the equality between values matter in this case, so we have to consider the cases where values are equal. because changing x₀ < y₀ to x₀ = y₀ changes the winning relationship between them from a win for dice X to a tie.
+however, the equality between values matter in this case because changing x₀ < y₀ to x₀ = y₀ changes the winning relationship between them from a win for dice X to a tie, so we have to consider the cases where values are equal.
 we have 280 cases, each one with 8 comparisions ≤, each comparision can be either < or =, so we have 2^8 = 256 combinations of < and = for each case.
 totaling 280 * 256 = 71680 combinations of value arrangements. some of these combinations equivalent to each other, for example: 
 
@@ -27,9 +27,20 @@ x₀ ≤ x₁ ≤ y₀ ≤ x₂ ≤ z₀ ≤ y₁ ≤ z₁ ≤ z₂ ≤ y₂
 are equivalent when we set y₂ = z₂, because both become:
 x₀ ≤ x₁ ≤ y₀ ≤ x₂ ≤ z₀ ≤ y₁ ≤ z₁ ≤ y₂ = z₂
 so we have to filter these equivalences out. I propose we do this by generating all combinations, and storing them in a set data structure to ensure uniqueness. when equality is set, we sort equal values to ensure uniqueness.
+This is done on `code/generating_equality_cases.py`, output saved at `data/dice_set_all_cases.txt` with 15712 unique combinations.
+We sort the output by amount of equalities first, then lexicographically, to make it easier to analyze. first the ones less equalities, then the more equalities. and sorted lexicographically inside each group.
+given a comparision arrangement, we can generate the dice comparision results because we know which values are equal and which are not. for example line 217 from `data/dice_set_all_cases.txt`:
 
-## ignore below work, it'll be changed later
+x₀<y₀<z₀<x₁<z₁<y₁<z₂<y₂<x₂
 
-let's use the values 1, 2, 3, 4, 5, 6, 7, 8 and 9 as test values because they hold that 1 < 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9
+gives us the results:
 
-we have these dice sets, and we test which ones are intransitive on `code/intransitive_exploration`
+(x₀,x₁,x₂),(y₀,y₁,y₂),(z₀,z₁,z₂)
+
+   y₀ y₁ y₂    z₀ z₁ z₂    x₀ x₁ x₂
+x₀ o  o  o  y₀ o  o  o  z₀ x  o  o 
+x₁ x  o  o  y₁ x  x  o  z₁ x  x  o 
+x₂ x  x  x  y₂ x  x  x  z₂ x  x  o 
+
+where o means win, x means loss, and = means tie.
+we can see that Y that beats X, Y beats Z, and Z beats X, so this diceset isn't intransitive. Y is a dominant die.
