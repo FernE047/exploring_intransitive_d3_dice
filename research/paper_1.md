@@ -68,4 +68,4 @@ Since Y defeats both other dice, this DiceSet is transitive with Y as a dominant
 
 To find intransitive dicesets, we check if there is a cycle in the winning relationships: X > Y, Y > Z, Z > X.
 Note that intransitive dicesets cannot have any ties, because ties would prevent the formation of a strict cycle of wins.
-This is implemented on `code/intransitive_exploration.py`, output saved at `data/intransitive_dice_sets.txt` with ???? intransitive dicesets found. #TODO: the code needs to be modified to not use numerical values for the comparisions, instead use the symbolic representation from `data/dice_set_all_cases.txt`.
+This is implemented on `code/test_intransitive_cases.py`, output saved at `data/intransitive_cases.txt` with 71 intransitive dicesets found.
