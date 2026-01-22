@@ -1,0 +1,285 @@
+Original comparison: t₀<w₀<w₁<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: v₀<t₀<w₀<w₁<v₁<t₁<t₂<w₂<v₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<t₁=v₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀=v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀=v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<t₁=v₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<t₁=v₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀=v₁<t₁=v₂<t₂<w₂
+
+Original comparison: t₀<w₀=w₁<t₁<t₂<w₂
+    Intransitive case: v₀<t₀<w₀=w₁<v₁<t₁<t₂<w₂<v₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁<t₁<v₂<t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁<v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<t₁=v₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁<t₁=v₂<t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁=v₂<t₁<t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<t₁=v₁=v₂<t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<t₁=v₁=v₂<t₂<w₂
+
+Original comparison: t₀<w₀<w₁<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: v₀<t₀<w₀<w₁<v₁<t₁=t₂<w₂<v₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀<v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀<v₀<w₁<v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀<w₁<v₀=v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀<v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀=v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀<w₁=v₀=v₁<t₁=t₂=v₂<w₂
+
+Original comparison: t₀<w₀=w₁<t₁=t₂<w₂
+    Intransitive case: v₀<t₀<w₀=w₁<v₁<t₁=t₂<w₂<v₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀<v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁<v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀=w₁<v₀=v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<w₀=w₁=v₀<v₁=v₂<t₁=t₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁<t₁=t₂=v₂<w₂
+    Intransitive case: t₀<v₀=w₀=w₁<v₁=v₂<t₁=t₂<w₂
+
+Original comparison: t₀<w₀<w₁<t₁<w₂<t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<w₁<t₁<v₁<v₂<w₂<t₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<w₁<t₁<v₁=v₂<w₂<t₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁<t₁<w₂<t₂<v₂
+
+Original comparison: t₀<w₀<t₁<w₁<w₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁<w₂<v₁<v₂<t₂
+    Intransitive case: t₀<w₀<v₀<v₁<t₁<w₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁<w₂<v₁=v₂<t₂
+    Intransitive case: t₀<w₀<v₀=v₁<t₁<w₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀<w₀<w₁<w₂<t₁<t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁<w₂<t₁<t₂<v₂
+
+Original comparison: t₀<w₀<w₁<t₁=w₂<t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁<t₁=w₂<t₂<v₂
+
+Original comparison: t₀<w₀<w₁<w₂<t₁=t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁<w₂<t₁=t₂<v₂
+
+Original comparison: t₀<w₀<w₁=w₂<t₁<t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁=w₂<t₁<t₂<v₂
+
+Original comparison: t₀<w₀<t₁=w₁=w₂<t₂
+    Intransitive case: t₀<v₀<v₁<w₀<t₁=w₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<t₁=w₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<t₁=w₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<t₁=w₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<t₁=w₁=w₂<t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<t₁=w₁=w₂<t₂<v₂
+
+Original comparison: t₀<w₀<w₁<t₁=t₂=w₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁<t₁=t₂=w₂<v₂
+
+Original comparison: t₀<w₀<w₁=w₂<t₁=t₂
+    Intransitive case: t₀<v₀<v₁<w₀<w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀<w₀<v₁<w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀<w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀<w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁=w₀<w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<w₀=v₀=v₁<w₁=w₂<t₁=t₂<v₂
+
+Original comparison: t₀<t₁<w₀<w₁<w₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀<t₁<w₀=w₁<w₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀<t₁=w₀<w₁<w₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀<w₀<t₁<w₁=w₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁=w₂<v₁<v₂<t₂
+    Intransitive case: t₀<w₀<v₀<v₁<t₁<w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<v₁=w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<w₀<t₁<w₁=w₂<v₁=v₂<t₂
+    Intransitive case: t₀<w₀<v₀=v₁<t₁<w₁=w₂<v₂<t₂
+
+Original comparison: t₀<w₀=w₁<t₁<w₂<t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀=w₁<t₁<v₁<v₂<w₂<t₂
+    Intransitive case: t₀<v₀<v₁=w₀=w₁<t₁<w₂<t₂<v₂
+    Intransitive case: t₀<v₀<w₀=w₁<t₁<v₁=v₂<w₂<t₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁<t₁<w₂<t₂<v₂
+
+Original comparison: t₀=t₁<w₀<w₁<w₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀<t₁=w₀=w₁<w₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀=w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀=w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀=w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀=w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀=w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀=t₁<w₀=w₁<w₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀=t₁=w₀<w₁<w₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁<v₁<w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁<w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁<v₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁<w₂<v₁=v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁<v₁=v₂=w₂<t₂
+
+Original comparison: t₀=w₀=w₁<t₁<t₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁<v₁<t₂<v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁<t₂<v₁<v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁<v₁=t₂<v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁<t₂<v₁=v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁<v₁=v₂=t₂<w₂
+
+Original comparison: t₀<t₁<w₀<w₁=w₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<v₁=w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀<w₁=w₂<v₁=v₂<t₂
+
+Original comparison: t₀<w₀=w₁<w₂<t₁<t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀=w₁<w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁<w₂<t₁<t₂<v₂
+
+Original comparison: t₀<t₁=w₀<w₁=w₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<v₁=w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀<t₁=w₀<w₁=w₂<v₁=v₂<t₂
+
+Original comparison: t₀<w₀=w₁<t₁=w₂<t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀=w₁<t₁=w₂<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁<t₁=w₂<t₂<v₂
+
+Original comparison: t₀<w₀=w₁<w₂<t₁=t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀=w₁<w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁<w₂<t₁=t₂<v₂
+
+Original comparison: t₀=t₁<w₀<w₁=w₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<v₁=w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀<w₁=w₂<v₁=v₂<t₂
+
+Original comparison: t₀<w₀=w₁<t₁=t₂=w₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀<v₁=w₀=w₁<t₁=t₂=w₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁<t₁=t₂=w₂<v₂
+
+Original comparison: t₀=t₁=w₀<w₁=w₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<v₁=w₁=w₂<v₂<t₂
+    Intransitive case: v₀<t₀=t₁=w₀<w₁=w₂<v₁=v₂<t₂
+
+Original comparison: t₀=w₀=w₁<t₁=t₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁=t₂<v₁<v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<v₁=t₁=t₂<v₂<w₂
+    Intransitive case: v₀<t₀=w₀=w₁<t₁=t₂<v₁=v₂<w₂
+
+Original comparison: t₀<t₁<w₀=w₁=w₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀<t₁<w₀=w₁=w₂<v₁=v₂<t₂
+
+Original comparison: t₀<w₀=w₁=w₂<t₁<t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁=w₂<t₁<t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁=w₂<t₁<t₂<v₂
+
+Original comparison: t₀<w₀=w₁=w₂<t₁=t₂
+    Intransitive case: t₀<v₀<v₁<w₀=w₁=w₂<t₁=t₂<v₂
+    Intransitive case: t₀<v₀=v₁<w₀=w₁=w₂<t₁=t₂<v₂
+
+Original comparison: t₀=t₁<w₀=w₁=w₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁=w₂<v₁<v₂<t₂
+    Intransitive case: v₀<t₀=t₁<w₀=w₁=w₂<v₁=v₂<t₂
+
