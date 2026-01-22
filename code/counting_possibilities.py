@@ -1,3 +1,5 @@
+DICESET_SIZE = 3
+
 class State:
     def __init__(
         self,
@@ -10,7 +12,7 @@ class State:
         self.order: dict[int, int]
         self.current_index: int = current_index
         if groups is None:
-            self.groups = [["x", "y", "z"] * 3]
+            self.groups = [["x", "y", "z"], ["x", "y", "z"], ["x", "y", "z"]]
         else:
             self.groups = groups
         if order is None:
@@ -32,7 +34,7 @@ class State:
             char = new_groups[i].pop(0) + "_" + str(new_order[i])
             text = ""
             if self.string_coming:
-                text = self.string_coming + " < " + char
+                text = self.string_coming + " ≤ " + char
             else:
                 text = char
             new_state = State(new_groups, new_order, new_index, text)
