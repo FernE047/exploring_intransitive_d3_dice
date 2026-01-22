@@ -117,3 +117,5 @@ dD = ((1,4,7), (2,5,5), (3,3,6))
 Problem III: what are the minimal numerical dicesets that produce these intransitive dicesets? given a diceset (X, Y, Z), we want to find the minimal numerical values for X, Y, Z that satisfy the comparision arrangement. and all values must be positive integers.
 
 this is implemented on `code/finding_minimal_numerical_dicesets.py`, output saved at `data/minimal_numerical_dicesets.txt` with 71 minimal numerical dicesets found.
+
+exploration continues on `research/paper_2.md`
