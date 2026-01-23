@@ -67,7 +67,7 @@ We observe that Y > X, Y > Z, and Z > X.
 Since Y defeats both other dice, this DiceSet is transitive with Y as a dominant die, and therefore not intransitive.
 
 To find intransitive dicesets, we check if there is a cycle in the winning relationships: X > Y, Y > Z, Z > X.
-Note that intransitive dicesets cannot have any ties, because ties would prevent the formation of a strict cycle of wins.
+Note that intransitive dicesets cannot have any ties between dices, aka two dice have the same face values, because ties would prevent the formation of a strict cycle of wins.
 This is implemented on `code/test_intransitive_cases.py`, output saved at `data/intransitive_cases.txt` with 71 intransitive dicesets found.
 
 This solves Problem II: 71 intransitive dicesets found.
